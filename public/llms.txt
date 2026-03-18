@@ -1,0 +1,44 @@
+# FluentCMS - AI-Powered Blazor Headless CMS
+
+## Overview
+
+FluentCMS is an AI-powered, open-source Content Management System (CMS) built with ASP.NET Core and Blazor. It provides a modern, headless architecture that enables seamless integration with modern development tools and platforms.
+
+## Features
+
+- **AI-Powered Content Generation**: Utilize natural language processing and machine learning algorithms to generate high-quality content
+- **Headless Architecture**: Build scalable, flexible applications using a headless CMS that separates front and back ends
+- **Sitebuilder Interface**: Create user-friendly interfaces that empower users to design without coding knowledge
+- **Intelligent Suggestions**: Leverage AI to suggest relevant content ideas based on audience preferences
+- **Adaptive Design**: Optimize layouts and themes based on user behavior and device types
+- **Personalized Experience**: Provide personalized content recommendations and tailored search results
+- **Seamless Integration**: Integrate with popular tools using RESTful APIs and webhooks
+- **Advanced Analytics**: Gain insights into user behavior and content performance
+
+## Technology Stack
+
+- ASP.NET Core
+- Blazor (Server & Client)
+- Tailwind CSS
+- Flowbite UI
+- C# / .NET
+
+## Repository
+
+- **GitHub**: https://github.com/fluentcms/FluentCMS
+- **Stars**: 537+
+- **Forks**: 106+
+- **License**: MIT
+
+## Community
+
+- **Discord**: https://discord.gg/WyqYuC6YbY
+- **Website**: https://fluentcms.com
+
+## Get Started
+
+Visit https://github.com/fluentcms/FluentCMS to get started with FluentCMS.
+
+## Related Topics
+
+asp.net-core, asp.net-core-cms, blazor, blazor-application, blazor-server, cms, headless-cms, tailwind, csharp, open-source

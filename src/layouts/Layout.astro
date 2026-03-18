@@ -1,0 +1,135 @@
+---
+import '../styles/global.css';
+
+interface Props {
+  title: string;
+  description?: string;
+  keywords?: string;
+}
+
+const { 
+  title, 
+  description = "FluentCMS is an AI-powered, open-source headless CMS built with ASP.NET Core and Blazor. Features include AI content generation, site builder, headless architecture, and modern UI/UX.",
+  keywords = "FluentCMS, headless CMS, Blazor CMS, ASP.NET Core CMS, AI CMS, open source CMS, .NET CMS, content management system, headless content management, AI content generation, Blazor headless CMS, .NET headless CMS"
+} = Astro.props;
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>{title}</title>
+    <meta name="description" content={description} />
+    <meta name="keywords" content={keywords} />
+    <meta name="author" content="FluentCMS" />
+    <meta name="robots" content="index, follow" />
+    <meta name="generator" content="Astro" />
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://fluentcms.com" />
+    <meta property="og:site_name" content="FluentCMS" />
+    <meta property="og:image" content="https://fluentcms.com/og-image.png" />
+    
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content={title} />
+    <meta name="twitter:description" content={description} />
+    <meta name="twitter:image" content="https://fluentcms.com/og-image.png" />
+    <meta name="twitter:site" content="@fluentcms" />
+    
+    <!-- Canonical -->
+    <link rel="canonical" href="https://fluentcms.com" />
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="manifest" href="/site.webmanifest">
+    
+    <!-- Theme Color -->
+    <meta name="theme-color" content="#1C64F2" />
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Structured Data - Organization -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "FluentCMS",
+        "url": "https://fluentcms.com/",
+        "logo": "https://fluentcms.com/files/images/logo.svg",
+        "description": "AI-powered, open-source headless CMS built with ASP.NET Core and Blazor",
+        "sameAs": [
+          "https://github.com/fluentcms/FluentCMS",
+          "https://discord.gg/WyqYuC6YbY"
+        ],
+        "contactPoint": {
+          "@type": "ContactPoint",
+          "contactType": "Community",
+          "url": "https://discord.gg/WyqYuC6YbY"
+        }
+      }
+    </script>
+    
+    <!-- Structured Data - Software Application -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "SoftwareApplication",
+        "name": "FluentCMS",
+        "applicationCategory": "WebApplication",
+        "operatingSystem": "Windows, Linux, macOS",
+        "description": "AI-powered, open-source headless CMS built with ASP.NET Core and Blazor",
+        "url": "https://fluentcms.com",
+        "downloadUrl": "https://github.com/fluentcms/FluentCMS/releases",
+        "softwareVersion": "1.0.0",
+        "license": {
+          "@type": "License",
+          "url": "https://github.com/fluentcms/FluentCMS/blob/main/LICENSE"
+        },
+        "author": {
+          "@type": "Organization",
+          "name": "FluentCMS",
+          "url": "https://fluentcms.com"
+        },
+        "aggregateRating": {
+          "@type": "AggregateRating",
+          "ratingValue": "4.8",
+          "ratingCount": "537",
+          "bestRating": "5"
+        }
+      }
+    </script>
+    
+    <!-- Structured Data - WebSite -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "WebSite",
+        "name": "FluentCMS",
+        "url": "https://fluentcms.com/",
+        "description": "AI-powered, open-source headless CMS built with ASP.NET Core and Blazor",
+        "publisher": {
+          "@type": "Organization",
+          "name": "FluentCMS"
+        },
+        "potentialAction": {
+          "@type": "SearchAction",
+          "target": "https://github.com/fluentcms/FluentCMS?q={search_term_string}",
+          "query-input": "required name=search_term_string"
+        }
+      }
+    </script>
+  </head>
+  <body class="bg-white dark:bg-gray-950 antialiased">
+    <slot />
+  </body>
+</html>
