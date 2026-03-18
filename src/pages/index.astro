@@ -390,5 +390,15 @@ import Layout from '../layouts/Layout.astro';
         localStorage.setItem('color-theme', 'dark');
       }
     });
+
+    // Mobile menu toggle
+    const mobileMenuBtn = document.querySelector('[data-collapse-toggle="navbar-cta"]');
+    const mobileMenu = document.getElementById('navbar-cta');
+
+    mobileMenuBtn.addEventListener('click', function() {
+      mobileMenu.classList.toggle('hidden');
+      const isExpanded = mobileMenuBtn.getAttribute('aria-expanded') === 'true';
+      mobileMenuBtn.setAttribute('aria-expanded', !isExpanded);
+    });
   </script>
 </Layout>
